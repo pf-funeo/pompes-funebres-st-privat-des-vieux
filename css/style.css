@@ -1,123 +1,155 @@
-body {
-  font-family: Arial, sans-serif;
+/* Reset de base */
+* {
   margin: 0;
   padding: 0;
-  background-color: #f7f7f7;
-  color: #333;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
 }
 
-header {
-  background-color: #222;
-  color: #fff;
-  padding: 20px 0;
+/* Fond sombre, ton sobre */
+body {
+  background-color: #121212;
+  color: #bfa76f; /* or doux, pas clinquant */
+  line-height: 1.7;
+  font-weight: 400;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-header .container {
-  width: 90%;
-  max-width: 1200px;
+/* Conteneur principal */
+.container {
+  max-width: 1100px;
   margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* Logo et slogan */
+.header-logo {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  gap: 1.2rem;
+  margin-bottom: 3rem;
 }
 
-header img.logo {
-  height: 60px;
+.header-logo img {
+  width: 90px;
+  height: auto;
+  filter: drop-shadow(0 0 4px rgba(191, 167, 111, 0.6));
 }
 
-header h1 {
-  font-size: 1.8em;
-  margin: 0;
-}
-
-header .slogan {
+.header-logo .slogan {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #bfa76f;
   font-style: italic;
-  font-size: 1em;
-  margin-top: 5px;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+/* Menu sobre et élégant */
+nav {
+  background-color: #1c1c1c;
+  padding: 1.2rem 2rem;
+  border-radius: 6px;
+  box-shadow: 0 0 12px rgba(191, 167, 111, 0.3);
+  margin-bottom: 4rem;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
+  gap: 2.5rem;
+  justify-content: center;
 }
 
-nav a {
-  color: #fff;
+nav ul li a {
+  color: #bfa76f;
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 3px;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
-nav a:hover {
-  text-decoration: underline;
+nav ul li a:hover,
+nav ul li a:focus {
+  background-color: #bfa76f;
+  color: #121212;
+  box-shadow: 0 0 10px rgba(191, 167, 111, 0.7);
 }
 
+/* Sections structurées */
 section {
-  padding: 40px 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  padding: 2.5rem 3rem;
+  margin-bottom: 3.5rem;
+  box-shadow: 0 0 14px rgba(191, 167, 111, 0.25);
 }
 
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: #fff;
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-  border-radius: 8px;
+section h2 {
+  font-family: 'Merriweather', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #bfa76f;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #bfa76f;
+  padding-bottom: 0.6rem;
 }
 
-h2, h3 {
-  color: #444;
+section p {
+  font-size: 1.15rem;
+  color: #d3c689;
+  line-height: 1.75;
+  margin-top: 0.6rem;
 }
 
-ul {
-  padding-left: 20px;
+/* Boutons discrets et nobles */
+.btn-gold {
+  background: linear-gradient(135deg, #bfa76f 0%, #a88e47 100%);
+  color: #121212;
+  padding: 0.6rem 1.6rem;
+  border: none;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 6px rgba(191, 167, 111, 0.6);
+  transition: box-shadow 0.3s ease, transform 0.15s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
 }
 
-ul li {
-  margin-bottom: 10px;
+.btn-gold:hover {
+  box-shadow: 0 0 14px rgba(191, 167, 111, 0.9);
+  transform: scale(1.05);
 }
 
-.btn {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #444;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.3s;
-}
-
-.btn:hover {
-  background-color: #666;
-}
-
+/* Footer simple et discret */
 footer {
-  background-color: #222;
-  color: #ccc;
   text-align: center;
-  padding: 20px 0;
-  margin-top: 40px;
+  padding: 1.7rem 0;
+  color: #8e7f4a;
+  border-top: 1px solid #bfa76f;
+  font-size: 0.9rem;
+  user-select: none;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  margin-top: 10px;
-}
-
-form input, form textarea {
-  padding: 10px;
-  margin-top: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-}
-
-form button {
-  margin-top: 15px;
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .header-logo {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .container {
+    padding: 2rem 1.5rem;
+  }
 }
