@@ -2,51 +2,64 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pompes Funèbres - Accueil</title>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Accueil - Entreprise Funéraire Premium</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
-    <div class="logo-container">
-      <img src="images/logo.png" alt="Logo Pompes Funèbres" class="logo" />
-      <h1>AnimaMemory</h1>
-      <p class="slogan">À vos côtés avec respect et dignité</p>
+  <header class="container">
+    <div class="header-logo">
+      <img src="logo.png" alt="Logo entreprise funéraire" />
+      <div class="slogan">Respect et Excellence</div>
     </div>
     <nav>
       <ul>
-        <li><a href="index.html">Accueil</a></li>
+        <li><a href="index.html" aria-current="page">Accueil</a></li>
+        <li><a href="animalier.html">Animalier</a></li>
+        <li><a href="animaux.html">Animaux</a></li>
+        <li><a href="avis.html">Avis</a></li>
+        <li><a href="cercueils.html">Cercueils</a></li>
+        <li><a href="contactc.html">Contact</a></li>
+        <li><a href="devis.html">Devis</a></li>
+        <li><a href="equipe.html">Équipe</a></li>
+        <li><a href="espace-famille.html">Espace famille</a></li>
+        <li><a href="histoire.html">Histoire</a></li>
+        <li><a href="marbrerie.html">Marbrerie</a></li>
+        <li><a href="mention.html">Mentions légales</a></li>
+        <li><a href="notre-histoire.html">Notre histoire</a></li>
+        <li><a href="obseques.html">Obsèques</a></li>
+        <li><a href="prevoir.html">Prévoir</a></li>
         <li><a href="services.html">Services</a></li>
-        <li><a href="equipe.html">Qui sommes-nous</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="mentions.html">Mentions légales</a></li>
+        <li><a href="tarifs.html">Tarifs</a></li>
+        <li><a href="temoignage.html">Témoignages</a></li>
       </ul>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h2>Votre accompagnement personnalisé</h2>
-      <p>Un service haut de gamme, discret et attentif, pour honorer dignement la mémoire de vos proches.</p>
-      <a href="contact.html" class="btn">Obtenir un devis détaillé</a>
+  <main class="container">
+    <section>
+      <h2>Bienvenue chez Entreprise Funéraire Premium</h2>
+      <p>Nous vous accompagnons avec respect et professionnalisme dans les moments les plus délicats de la vie. Notre expertise et notre engagement vous garantissent un service digne et haut de gamme.</p>
+      <p>Explorez nos services, découvrez nos produits et contactez-nous pour toute demande personnalisée.</p>
+      <button class="btn-gold" onclick="window.location.href='contactc.html'">Nous contacter</button>
     </section>
 
-    <section class="presentation">
-      <h2>Qui sommes-nous ?</h2>
-      <p>Entreprise familiale reconnue, nous plaçons l'écoute et la bienveillance au cœur de notre métier. Nos équipes sont formées pour vous accompagner avec dignité et professionnalisme.</p>
+    <section>
+      <h2>Nos Services</h2>
+      <p>Organisation complète de cérémonies, accompagnement personnalisé, conseils et soutien, gestion administrative...</p>
+      <button class="btn-gold" onclick="window.location.href='services.html'">Voir tous les services</button>
     </section>
 
-    <section class="services-preview">
-      <h2>Nos services</h2>
-      <p>Organisation complète des obsèques, marbrerie funéraire, contrats prévoyance et assistance personnalisée pour chaque étape.</p>
-      <a href="services.html" class="btn">Découvrir nos services</a>
+    <section>
+      <h2>Produits et Solutions</h2>
+      <p>Nous proposons un large choix de cercueils, urnes, articles funéraires ainsi qu’un espace dédié aux animaux et marbrerie.</p>
+      <button class="btn-gold" onclick="window.location.href='produits.html'">Découvrir nos produits</button>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 AnimaMemory - Tous droits réservés</p>
+    &copy; 2025 Entreprise Funéraire Premium — Tous droits réservés
   </footer>
 </body>
 </html>
-
