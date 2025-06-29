@@ -9,7 +9,7 @@
 /* Fond sombre, ton sobre */
 body {
   background-color: #121212;
-  color: #bfa76f; /* or doux, pas clinquant */
+  color: #bfa76f; /* or doux */
   line-height: 1.7;
   font-weight: 400;
   min-height: 100vh;
@@ -33,7 +33,7 @@ body {
 }
 
 .header-logo img {
-  width: 90px;
+  width: 60px; /* logo plus petit */
   height: auto;
   filter: drop-shadow(0 0 4px rgba(191, 167, 111, 0.6));
 }
@@ -59,16 +59,17 @@ nav {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 2.5rem;
+  gap: 1.8rem;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul li a {
   color: #bfa76f;
   text-decoration: none;
   font-weight: 600;
-  font-size: 1.05rem;
-  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  padding: 0.4rem 0.7rem;
   border-radius: 3px;
   transition: background-color 0.25s ease, color 0.25s ease;
 }
@@ -148,6 +149,12 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  
+  .container {
+    padding: 2rem 1.5rem;
+  }
+}
+
   
   .container {
     padding: 2rem 1.5rem;
